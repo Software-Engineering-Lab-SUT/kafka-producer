@@ -35,6 +35,7 @@ public class Producer extends Thread {
 
     private void sendAllSymbols(KafkaProducer<String, Candlestick> producer) {
         Config.SYMBOLS.stream().parallel().forEach(x -> send(producer, x));
+        producer.flush();
     }
 
     private void send(KafkaProducer<String, Candlestick> producer, String symbol) {
