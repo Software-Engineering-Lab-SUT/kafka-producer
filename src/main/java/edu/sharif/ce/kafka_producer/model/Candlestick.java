@@ -21,34 +21,6 @@ public class Candlestick {
         this.closeTime = closeTime;
     }
 
-    public String getSymbol() {
-        return symbol;
-    }
-
-    public Long getOpenTime() {
-        return openTime;
-    }
-
-    public String getOpen() {
-        return open;
-    }
-
-    public String getHigh() {
-        return high;
-    }
-
-    public String getLow() {
-        return low;
-    }
-
-    public String getClose() {
-        return close;
-    }
-
-    public Long getCloseTime() {
-        return closeTime;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
